@@ -1,119 +1,167 @@
-📊 Sales Analytics Dashboard (Power BI Project)
-📌 Project Overview
+# 📊 Sales Analytics Dashboard (Power BI Portfolio Project)
 
-This project is an end-to-end Sales Analytics Dashboard built using Power BI, designed to analyze business performance across products, customers, employees, regions, and time periods.
+## 📌 Project Summary
 
-It provides insights into:
+This project is an interactive **Sales Analytics Dashboard built using Power BI** designed to analyze business performance across products, customers, employees, and regions.
 
-Total Sales & Profitability
-Product Performance
-Customer Analysis
-Time-based Sales Trends
-Regional Performance (City / Country)
-Employee-related sales contribution
-📁 Dataset Description
+It provides a complete view of sales performance including:
+- Revenue trends over time  
+- Product and product line performance  
+- Customer purchasing behavior  
+- Profitability analysis  
+- Regional and employee contribution  
 
-The project uses a relational dataset consisting of multiple CSV files:
+The goal is to transform raw sales data into meaningful business insights for decision-making.
 
-customers.csv – Customer details
-employees.csv – Employee information
-offices.csv – Office location data
-orderdetails.csv – Order line-level details
-orders.csv – Order transactions
-payments.csv – Payment records
-productline.csv – Product category information
-products.csv – Product details
-🔄 Data Cleaning & Transformation
+---
 
-All data preprocessing was done using Power Query Editor, including:
+## 🎯 Business Objective
 
-Removal of duplicate records
-Handling missing (null) values
-Fixing inconsistent data types and errors
-Standardizing column formats
-Creating relationships between tables
-🧹 Key Transformations:
-Created Full Name column for customers by combining first and last name
-Extracted Month Name and Month Number from Order Date
-Structured data into a proper star schema model
-🧠 Data Modeling
+The main objective of this dashboard is to:
 
-A proper relationship model was built between tables:
+- Track overall sales and profitability performance  
+- Identify top-performing products and product lines  
+- Analyze customer purchasing behavior  
+- Evaluate regional and employee contribution to sales  
+- Understand monthly and yearly sales trends  
+- Support data-driven business decisions  
 
-Orders → OrderDetails → Products
-Customers → Orders
-Employees → Offices
+---
 
-This enabled efficient filtering and aggregation across the dashboard.
+## 📁 Dataset Overview
 
-🧮 DAX Measures & Calculations
+The dataset is a relational sales dataset consisting of multiple CSV files:
 
-Several important measures and calculated columns were created:
+- Customers (customer details)  
+- Orders (order transactions)  
+- Order Details (line-level sales data)  
+- Products (product information)  
+- Product Lines (product categories)  
+- Employees (sales representatives)  
+- Offices (regional office data)  
+- Payments (transaction details)  
 
-📌 Core Metrics:
-Total Sales
-Total Profit
-Profit Margin %
-Quantity Ordered
-📌 Sales Logic:
-Sales was calculated using order-level computations (Quantity × Price Each)
-Profit was calculated using:
-Sales − Buy Price impact from product cost
-📌 Profit Margin:
-Profit Margin % = DIVIDE([Total Profit], [Total Sales])
-📌 Time Intelligence Measures:
-Sales by Year (2003, 2004, 2005)
-Sales by Month
-Monthly trend analysis using Order Date
-📊 Dashboard Features
+---
 
-The Power BI report includes three main views:
+## 🧹 Data Cleaning & Transformation
 
-🟢 1. Main Dashboard (Overview)
-Total Sales
-Total Profit
-Profit Margin %
-Top Products
-Key KPI cards
-Regional and product performance overview
-🔵 2. Detailed Analysis View
-Sales by Product Line
-Quantity Ordered by Product Line
-Sales by Product Name
-Quantity Ordered by Product Name
-Year-wise Sales Trends
-🟣 3. Tooltip View
-Interactive tooltip showing:
-Sales by Product Name (Bar Chart)
-Provides quick insights on hover
-📈 Key Insights
-Identified top-performing product lines
-Analyzed seasonal sales trends
-Found highest revenue-generating products
-Compared profitability across product categories
-Evaluated regional sales performance
-🛠 Tools & Technologies Used
-Power BI Desktop
-Power Query (Data Cleaning & Transformation)
-DAX (Data Analysis Expressions)
-Excel / CSV datasets
-🚀 Project Outcome
+All data preprocessing was performed using **Power Query Editor**:
 
-This dashboard helps businesses:
+- Removed duplicate records  
+- Handled missing and null values  
+- Fixed data type inconsistencies  
+- Removed unnecessary columns  
+- Standardized data formatting  
+- Created calculated columns (Full Name, Sales, Profit, etc.)  
+- Built relationships between multiple tables  
 
-Track sales performance in real-time
-Identify top products and regions
-Improve decision-making using data-driven insights
-Understand profitability at a granular level
-📷 Screenshots
-01_Sales_Overview_Dashboard.png
-02_Sales_Detailed_View.png
-03_Sales_Tooltip_View.png
-📌 Author
+---
 
-DHARSHINI M R
-Aspiring Data Analyst | Power BI | SQL | Data Visualization
+## 🧠 Data Modeling & DAX Calculations
 
-⭐ If you like this project
+A structured data model was created to connect customers, orders, products, and employees.
+
+### 📌 Key Calculations:
+
+- Sales Amount calculated using quantity and price  
+- Profit calculated using sales minus product cost  
+- Total Sales aggregated across all transactions  
+- Total Profit aggregated across orders  
+- Profit Margin calculated as ratio of profit to sales  
+- Time-based calculations using order date (month, year)
+
+---
+
+## 📊 Key Performance Indicators (KPIs)
+
+- 💰 Total Sales  
+- 📈 Total Profit  
+- 📊 Profit Margin %  
+- 📦 Total Quantity Ordered  
+- 🏆 Most Ordered Product  
+- 👥 Total Customers  
+- 📍 Regional Sales Contribution  
+
+---
+
+## 📈 Dashboard Features
+
+### 🟢 Overview Dashboard
+- KPI cards for Sales, Profit, Margin, Quantity  
+- Top products and product performance  
+- Sales trend over time (monthly/yearly)  
+- Regional and customer insights  
+
+---
+
+### 🔵 Product Analysis
+- Sales by Product Line  
+- Quantity ordered by Product Line  
+- Top 5 best-selling products  
+- Product-wise profitability  
+
+---
+
+### 🟣 Time-Based Analysis
+- Monthly sales trends  
+- Year-wise sales comparison  
+- Seasonal performance insights  
+
+---
+
+### 🟠 Customer & Employee Analysis
+- Sales contribution by employees  
+- Customer purchase behavior analysis  
+- Regional performance tracking  
+
+---
+
+## 🔍 Key Insights
+
+- Certain product lines contribute significantly to overall revenue  
+- A small set of products generate majority of sales  
+- Sales show clear monthly and seasonal trends  
+- Employee performance varies significantly across regions  
+- Customer purchase behavior helps identify high-value customers  
+
+---
+
+## 🛠 Tools & Technologies Used
+
+- Power BI Desktop  
+- Power Query Editor  
+- DAX (Data Modeling & Calculations)  
+- Excel / CSV Dataset  
+
+---
+
+## 🚀 Project Outcome
+
+This dashboard helps businesses to:
+
+- Identify top revenue-generating products  
+- Improve sales strategy and forecasting  
+- Track employee and regional performance  
+- Optimize product and customer targeting  
+- Make data-driven business decisions  
+
+---
+
+## 📷 Screenshots
+
+- `01_Sales_Overview_Dashboard.png`  
+- `02_product_analysis_detailed_View.png`  
+- `03_product_sales_Tooltip.png`  
+
+---
+
+## 👤 Author
+
+**DHARSHINI M R**  
+Aspiring Data Analyst | Power BI | SQL | Data Visualization  
+
+---
+
+## ⭐ If you like this project
 
 Feel free to ⭐ the repository and explore more projects!
